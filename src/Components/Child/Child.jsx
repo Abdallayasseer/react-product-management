@@ -9,11 +9,9 @@ class Child extends Component {
       <div className="col-12 col-sm-6 col-lg-4 mt-3">
         {/* Card */}
         <div className="card mb-4 position-relative">
-          {onSale && (
-            <h5 className="bg-danger text-light p-2 rounded shadow position-absolute top-0 end-0 m-2">
+          {onSale ?  <h5 className="bg-danger text-light p-2 rounded shadow position-absolute top-0 end-0 m-2">
               Sale
-            </h5>
-          )}
+            </h5> : null}
           <div className="card-body">
             <h5 className="card-title">Product Name: {productName}</h5>
             <h6 className="card-text">Product Count: {productCount}</h6>
